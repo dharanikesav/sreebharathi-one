@@ -14,5 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.sliderImages = ["assets/images/education.jpg","assets/images/agriculture.jpg","assets/images/environment.jpg"]
   }  
+
+  
  
 }
