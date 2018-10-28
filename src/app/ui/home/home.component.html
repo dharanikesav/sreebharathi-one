@@ -4,7 +4,12 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let image of sliderImages let i = index" [class.active]="i == 0">
-            <img class="d-block w-100" [src]="image" alt="First slide">          
+            <img class="d-block w-100" [src]="image" alt="">   
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-secondary">Test Heading</h5>
+              <p>Test Description</p>
+              <button class="bg-dark">Donate</button>
+            </div>       
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
