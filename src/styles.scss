@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/scss/bootstrap.scss';
 //@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
 .bg-light-blue {
@@ -8,14 +9,14 @@
 }
 
 .my-header {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     vertical-align: middle;
 }
 
 .my-logo {
     display: inline-block;
-    width: 3.2em;
-    height: 3.2em;
+    width: 2.8em;
+    height: 2.8em;
     vertical-align: middle;
     content: "";
     background: no-repeat center center;
@@ -23,7 +24,7 @@
 }
 
 .my-txt {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 @media (min-width: 320px) {
@@ -87,7 +88,7 @@
 
 @media (min-width: 768px) {
     .my-txt {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     
     .my-header {
@@ -107,6 +108,6 @@
 
   @media (min-width: 992px) {
     .my-txt {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
       }   
 }
