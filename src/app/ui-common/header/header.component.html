@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-light-blue static-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top">
   <div class="container-fluid">
     <div>
       <a class="navbar-brand" routerLink="">
@@ -6,15 +6,19 @@
         <h6 class="my-header">Sree Bharati<br/>Navanirman Samithi</h6>
       </a>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+    <button class="navbar-toggler float-lg-left" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <div class="navbar-nav ml-auto">
         <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/'" routerLink="">Home<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/about-us'" routerLink="about-us">About</a>
+        <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/about-us'" routerLink="about-us">About us</a>
+        <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/projects'" routerLink="projects">Projects</a>
+        <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/events'" routerLink="events">Events</a>
+        <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/donate'" routerLink="donate">Donate</a>        
         <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/contact'" routerLink="contact">Contact</a>
+        <a class="nav-item nav-link my-txt" [class.active]="currentUrl == '/login'" routerLink="login">Login</a>        
       </div>
     </div>
   </div>

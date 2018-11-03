@@ -1,14 +1,18 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade p-1 bg-white rounded" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators"  *ngFor=" let image of sliderImages let i = index" [attr.data-slide-to]="i" [class.active]="i == 0"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let image of sliderImages let i = index" [class.active]="i == 0">
             <img class="d-block w-100" [src]="image" alt="">   
-            <div class="carousel-caption d-block">
-              <h5 class="text-secondary">Test Heading</h5>
-              <p>Test Description</p>
-              <button class="bg-dark">Donate</button>
+            <div class="carousel-caption">
+              <div>
+                <h5 class="d-inline-block p-2 bg-carousel-caption text-info">Test Heading</h5>
+              </div>
+              <div>
+                <small class="d-inline-block p-2 bg-carousel-caption text-info">Test Description</small>
+              </div>
+              <button class="btn-warning m-2" routerLink="donate">Donate</button>
             </div>       
         </div>
     </div>
@@ -21,3 +25,39 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col shadow mt-2 ml-2 mr-4 bg-white rounded">
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold mt-2 mb-0">Our Mission</h6>
+          <hr class="deep-purple accent-2 mb-1 mt-0 d-inline-block mx-auto" style="width: 107px;">
+          <p>Envisage a nation where the potential of underprivileged has a key role in its progress.</p>
+        </div>
+        <div class="col-xl-6 col-lg-6 shadow mr-4 mt-2 bg-white rounded">
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold mt-2 mb-0">Our Vision</h6>
+          <hr class="deep-purple accent-2 mb-1 mt-0 d-inline-block mx-auto" style="width: 93px;">
+          <p>Our vision is to ignite a strong passion in the students of financially weaker and socially backward sections,
+             to attain administrative positions; and to extend every possible support by guiding them learn in a way
+             that gives them confidence to achieve goals beyond their dreams; to see yoga become a part of everyone’s life
+             in attaining mental balance; to see pollution free world by encouraging native cow-clan protection, and
+             consumption of organic products; to encourage the community to participate in environmental protection and
+             to cultivate a habit of ‘Seva’; to inspire the youth to follow the ideals of icons of the nation like Swami Vivekananda,
+             Sister Nivedita and Abdul Kalam.</p>
+        </div>
+        <div class="col shadow mt-2 mr-2 bg-white rounded">
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold mt-2 mb-0">Contact</h6>
+            <hr class="deep-purple accent-2 mb-1 mt-0 d-inline-block mx-auto" style="width: 73px;">
+            <p>
+              <i class="fa fa-home mr-1"></i>6/5-1, Poolathota, Thurpuveedhi,<br/>Gudur, Nellore dist , AP</p>
+            <p>
+              <i class="fa fa-envelope mr-1"></i>sreebharati.navanirman@gmail.com</p>
+            <p>
+              <i class="fa fa-phone mr-1"></i>+91 9502975614</p>
+             <p>
+          </div>
+        </div>
+  </div>
+  
